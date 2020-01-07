@@ -1,0 +1,97 @@
+----------------------------------------------------------
+0.003992 s/iter | 0.079842 s total | Sequential python  8
+0.000100 s/iter | 0.002002 s total | Sequential numba   8
+0.000051 s/iter | 0.001026 s total | Parallel  para     8
+0.130561 s/iter | 2.611224 s total | Parallel  pool     8
+----------------------------------------------------------
+0.014992 s/iter | 0.299830 s total | Sequential python  9
+0.000433 s/iter | 0.008659 s total | Sequential numba   9
+0.000170 s/iter | 0.003396 s total | Parallel  para     9
+0.132000 s/iter | 2.639996 s total | Parallel  pool     9
+----------------------------------------------------------
+0.067109 s/iter | 1.342178 s total | Sequential python 10
+0.002085 s/iter | 0.041696 s total | Sequential numba  10
+0.000935 s/iter | 0.018692 s total | Parallel  para    10
+0.132947 s/iter | 2.658932 s total | Parallel  pool    10
+----------------------------------------------------------
+0.319363 s/iter | 6.387258 s total | Sequential python 11
+0.010677 s/iter | 0.213535 s total | Sequential numba  11
+0.004374 s/iter | 0.087475 s total | Parallel  para    11
+0.132646 s/iter | 2.652911 s total | Parallel  pool    11
+----------------------------------------------------------
+1.691882 s/iter | 33.83765 s total | Sequential python 12
+0.052982 s/iter | 1.059636 s total | Sequential numba  12
+0.025063 s/iter | 0.501255 s total | Parallel  para    12
+0.132852 s/iter | 2.657032 s total | Parallel  pool    12
+----------------------------------------------------------
+9.518178 s/iter | 190.3635 s total | Sequential python 13
+0.288757 s/iter | 5.775148 s total | Sequential numba  13
+0.153468 s/iter | 3.069369 s total | Parallel  para    13
+0.134112 s/iter | 2.682245 s total | Parallel  pool    13
+----------------------------------------------------------
+57.84525 s/iter | 1156.905 s total | Sequential python 14
+1.743458 s/iter | 34.86915 s total | Sequential numba  14
+0.981824 s/iter | 19.63648 s total | Parallel  para    14
+0.447777 s/iter | 8.955535 s total | Parallel  pool    14
+----------------------------------------------------------
+----------------------------------------------------------
+2.426730 s/iter | 7.280189 s total | Parallel  pool    15
+----------------------------------------------------------
+16.48614 s/iter | 32.97228 s total | Parallel  para    16
+16.37182 s/iter | 32.74364 s total | Parallel  pool    16
+----------------------------------------------------------
+546.3118 s/iter | 2731.559 s total | Sequential numba  17
+134.7803 s/iter | 269.5605 s total | Parallel  para    17
+133.7452 s/iter | 401.2356 s total | Parallel  pool    17
+----------------------------------------------------------
+4085.541 s/iter | 8171.081 s total | Sequential numba  18
+1218.108 s/iter | 2436.216 s total | Parallel  para    18
+1000.282 s/iter | 3000.846 s total | Parallel  pool    18
+----------------------------------------------------------
+
+nogil
+
+----------------------------------------------------------
+0.000140 s/iter | 0.000006 variance | Sequential numba   8
+0.000104 s/iter | 0.000050 variance | Parallel  para     8
+0.134602 s/iter | 0.004014 variance | Parallel  pool     8
+----------------------------------------------------------
+0.000613 s/iter | 0.000011 variance | Sequential numba   9
+0.000264 s/iter | 0.000064 variance | Parallel  para     9
+0.132697 s/iter | 0.003122 variance | Parallel  pool     9
+----------------------------------------------------------
+0.002479 s/iter | 0.000213 variance | Sequential numba  10
+0.000902 s/iter | 0.000081 variance | Parallel  para    10
+0.132175 s/iter | 0.003238 variance | Parallel  pool    10
+----------------------------------------------------------
+0.011245 s/iter | 0.000978 variance | Sequential numba  11
+0.004472 s/iter | 0.000196 variance | Parallel  para    11
+0.130589 s/iter | 0.005336 variance | Parallel  pool    11
+----------------------------------------------------------
+0.057115 s/iter | 0.001993 variance | Sequential numba  12
+0.026109 s/iter | 0.000971 variance | Parallel  para    12
+0.131513 s/iter | 0.001831 variance | Parallel  pool    12
+----------------------------------------------------------
+0.317508 s/iter | 0.004804 variance | Sequential numba  13
+0.159322 s/iter | 0.003167 variance | Parallel  para    13
+0.132620 s/iter | 0.002640 variance | Parallel  pool    13
+----------------------------------------------------------
+1.823422 s/iter | 0.070462 variance | Sequential numba  14
+0.995142 s/iter | 0.015507 variance | Parallel  para    14
+0.438844 s/iter | 0.003617 variance | Parallel  pool    14
+----------------------------------------------------------
+11.060640 s/iter | 0.041451 variance | Sequential numba  15
+6.699135 s/iter | 0.081877 variance | Parallel  para    15
+2.608087 s/iter | 0.105652 variance | Parallel  pool    15
+----------------------------------------------------------
+75.856364 s/iter | 1.642920 variance | Sequential numba  16
+17.194975 s/iter | 0.317158 variance | Parallel  para    16
+16.883050 s/iter | 0.082551 variance | Parallel  pool    16
+----------------------------------------------------------
+134.198797 s/iter | 0.355099 variance | Parallel  para    17
+134.728210 s/iter | 0.499266 variance | Parallel  pool    17
+----------------------------------------------------------
+1221.964608 s/iter | 56.857200 variance | Parallel  para    18
+999.084249 s/iter | 4.294864 variance | Parallel  pool    18
+----------------------------------------------------------
+

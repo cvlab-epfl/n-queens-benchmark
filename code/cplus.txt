@@ -1,0 +1,14 @@
+#Dynamic Allocation
+
+Found 2279184 solutions to the 15 queen problem in 9.994080 s per attempt. (var 0.322004, np 0, nt 10)
+Found 2279184 solutions to the 15 queen problem in 2.751420 s per attempt. (var 0.246512, np 1, nt 10)
+Found 14772512 solutions to the 16 queen problem in 66.777325 s per attempt. (var 0.509568, np 0, nt 10)
+Found 14772512 solutions to the 16 queen problem in 18.734209 s per attempt. (var 1.505582, np 1, nt 10)
+Found 95815104 solutions to the 17 queen problem in 122.826575 s per attempt. (var 9.634491, np 1, nt 5)
+Found 666090624 solutions to the 18 queen problem in 862.895645 s per attempt. (var 59.014603, np 1, nt 5)
+Found 95815104 solutions to the 17 queen problem in 491.909722 s per attempt. (var 3.838812, np 0, nt 5)
+Found 666090624 solutions to the 18 queen problem in 3677.104069 s per attempt. (var 23.887508, np 0, nt 5)
+
+#Static Allocation
+
+Found 666090624 solutions to the 18 queen problem in 874.987268 s per attempt. (var 57.061295, np 1, nt 5)

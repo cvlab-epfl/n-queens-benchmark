@@ -1,0 +1,46 @@
+#Dynamic Allocation
+
+Found   92 solutions to the  8 queens problem in 0.000091 seconds (var 0.000014,np = 0).
+Found   92 solutions to the  8 queens problem in 0.000123 seconds (var 0.000037,np = 1).
+Found  352 solutions to the  9 queens problem in 0.000442 seconds (var 0.000036,np = 0).
+Found  352 solutions to the  9 queens problem in 0.000221 seconds (var 0.000040,np = 1).
+Found  724 solutions to the 10 queens problem in 0.001978 seconds (var 0.000058,np = 0).
+Found  724 solutions to the 10 queens problem in 0.000548 seconds (var 0.000005,np = 1).
+Found 2680 solutions to the 11 queens problem in 0.010074 seconds (var 0.000070,np = 0).
+Found 2680 solutions to the 11 queens problem in 0.002361 seconds (var 0.000046,np = 1).
+Found 14200 solutions to the 12 queens problem in 0.054043 seconds (var 0.000572,np = 0).
+Found 14200 solutions to the 12 queens problem in 0.012218 seconds (var 0.000526,np = 1).
+Found 73712 solutions to the 13 queens problem in 0.305186 seconds (var 0.003932,np = 0).
+Found 73712 solutions to the 13 queens problem in 0.085797 seconds (var 0.010413,np = 1).
+Found 365596 solutions to the 14 queens problem in 1.806174 seconds (var 0.049960,np = 0).
+Found 365596 solutions to the 14 queens problem in 0.510221 seconds (var 0.059087,np = 1).
+Found 2279184 solutions to the 15 queens problem in 10.928442 seconds (var 0.117808,np = 0).
+Found 2279184 solutions to the 15 queens problem in 3.440805 seconds (var 0.473287,np = 1).
+Found 14772512 solutions to the 16 queens problem in 73.686670 seconds (var 1.017457,np = 0).
+Found 14772512 solutions to the 16 queens problem in 22.984141 seconds (var 2.161863,np = 1).
+Found 95815104 solutions to the 17 queens problem in 140.859995 seconds (var 6.108804,np = 1).
+Found 666090624 solutions to the 18 queens problem in 1068.710548 seconds (var 61.489555,np = 1).
+
+#Heap Allocation. 
+
+Found   92 solutions to the  8 queens problem in 0.000101 seconds (var 0.000005,np = 0).
+Found   92 solutions to the  8 queens problem in 0.000088 seconds (var 0.000017,np = 1).
+Found  352 solutions to the  9 queens problem in 0.000557 seconds (var 0.000013,np = 0).
+Found  352 solutions to the  9 queens problem in 0.000204 seconds (var 0.000030,np = 1).
+Found  724 solutions to the 10 queens problem in 0.002200 seconds (var 0.000070,np = 0).
+Found  724 solutions to the 10 queens problem in 0.000609 seconds (var 0.000011,np = 1).
+Found 2680 solutions to the 11 queens problem in 0.010507 seconds (var 0.000222,np = 0).
+Found 2680 solutions to the 11 queens problem in 0.002446 seconds (var 0.000034,np = 1).
+Found 14200 solutions to the 12 queens problem in 0.053280 seconds (var 0.001886,np = 0).
+Found 14200 solutions to the 12 queens problem in 0.011690 seconds (var 0.000244,np = 1).
+Found 73712 solutions to the 13 queens problem in 0.298674 seconds (var 0.006112,np = 0).
+Found 73712 solutions to the 13 queens problem in 0.065836 seconds (var 0.002715,np = 1).
+Found 365596 solutions to the 14 queens problem in 1.788006 seconds (var 0.013018,np = 0).
+Found 365596 solutions to the 14 queens problem in 0.353512 seconds (var 0.007756,np = 1).
+Found 2279184 solutions to the 15 queens problem in 11.497788 seconds (var 0.061340,np = 0).
+Found 2279184 solutions to the 15 queens problem in 2.218813 seconds (var 0.027230,np = 1).
+Found 14772512 solutions to the 16 queens problem in 78.802553 seconds (var 0.955458,np = 0).
+Found 14772512 solutions to the 16 queens problem in 15.613515 seconds (var 0.221807,np = 1).
+Found 95815104 solutions to the 17 queens problem in 562.316862 seconds (var 0.900846,np = 0).
+Found 95815104 solutions to the 17 queens problem in 113.519730 seconds (var 0.673938,np = 1).
+Found 666090624 solutions to the 18 queens problem in 863.312965 seconds (var 1.235287,np = 1).
