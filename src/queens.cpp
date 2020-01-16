@@ -111,6 +111,40 @@ int allQueens_sequential(int n) {
 	return nsol;
 }
 
+int allQueensLambda(int const n) {
+
+	std::array<bool, MAX_N_QUEENS> col;
+	col.fill(true);
+	std::array<bool, 2*MAX_N_QUEENS> dg1;
+	dg1.fill(true);
+	std::array<bool, 2*MAX_N_QUEENS> dg2;
+	dg2.fill(true);
+
+	std::function<int(int)> const descend = [&](int i) {
+		int nsol = 0;
+
+		for (int j = 0; j < n; j++) {
+			if (col[j] && dg1[i+j] && dg2[i-j+n]) {
+				col[j] = false; // the j-th column is now occupied
+				dg1[i+j] = false; // the diagonals are now occupied
+				dg2[i-j+n] = false;
+
+				nsol += descend(i+1);
+
+				// return the tables to previous state, in preparation for next j
+				col[j] = true;
+				dg1[i+j] = true;
+				dg2[i-j+n] = true;
+			}
+		}
+
+		return nsol;
+	};
+
+	return descend(0);
+}
+
+
 
 int allQueens_parallel(int n, int num_workers) {
 
@@ -258,7 +292,11 @@ int main(int arg_count, char** arg_values) {
 
 	if (num_workers <= 1) {
 		std::cout << "Sequential \n";
-		func_to_run = allQueens_sequential;
+		#ifndef LOOP_LAMBDA
+			func_to_run = allQueens_sequential;
+		#else
+			func_to_run = allQueensLambda;
+		#endif
 	} else {
 		std::cout << "Parallel \n";
 
