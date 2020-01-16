@@ -4,19 +4,17 @@
 	clang++ -Ofast -std=c++17 -pthread queens.cpp -o ../bin/queens_cpp_stack
 
 ../bin/queens_cpp_stack_lambda: queens.cpp
-	clang++ -Ofast -std=c++17 -pthread -DLOOP_LAMBDA queens.cpp -o ../bin/queens_cpp_stack
+	clang++ -Ofast -std=c++17 -pthread -DLOOP_LAMBDA queens.cpp -o ../bin/queens_cpp_stack_lambda
 
 ../bin/queens_cpp_heap: queens.cpp
 	clang++ -Ofast -std=c++17 -pthread -DALLOC_ON_HEAP queens.cpp -o ../bin/queens_cpp_heap
 
 c++: ../bin/queens_cpp_stack ../bin/queens_cpp_heap
+	../bin/queens_cpp_stack_lambda --num_from 8 --num_to 16 -w 1 --output ../data/cplus_seq_stack_lambda.csv
 	../bin/queens_cpp_stack --num_from 8 --num_to 16 -w 12 --output ../data/cplus_para_stack.csv
 	../bin/queens_cpp_stack --num_from 8 --num_to 16 -w 1 --output ../data/cplus_seq_stack.csv
 	../bin/queens_cpp_heap --num_from 8 --num_to 16 -w 12 --output ../data/cplus_para_heap.csv
 	../bin/queens_cpp_heap --num_from 8 --num_to 16 -w 1 --output ../data/cplus_seq_heap.csv
-
-cpplam: ../bin/queens_cpp_stack_lambda
-	../bin/queens_cpp_stack_lambda --num_from 8 --num_to 16 -w 1 --output ../data/cplus_seq_stack_lambda.csv
 
 
 ../bin/queens_cppat_vbyte: queens_arraytypes.cpp

@@ -63,6 +63,8 @@ int allQueensAux(int n, int i, ArrayTypeCol& col, ArrayTypeDg& dg1, ArrayTypeDg&
 int allQueensCol(int n, int j) {
 
 #ifdef ALLOC_ON_HEAP
+	#pragma message("Alloc: heap")
+
 	// Allocate the tables on the heap in a usual way using a std::vector
 
 	// We used uint8_t (byte) type instead of bool, because std::vector<bool> is implemented as a dense bit-field,
@@ -81,6 +83,7 @@ int allQueensCol(int n, int j) {
 	*/
 
 #else
+	#pragma message("Alloc: stack")
 	/*
 	Put the tables on the stack using std::array
 	https://en.cppreference.com/w/cpp/container/array
@@ -293,8 +296,10 @@ int main(int arg_count, char** arg_values) {
 	if (num_workers <= 1) {
 		std::cout << "Sequential \n";
 		#ifndef LOOP_LAMBDA
+			#pragma message("Loop - function")
 			func_to_run = allQueens_sequential;
 		#else
+			#pragma message("Loop - internal lambda")
 			func_to_run = allQueensLambda;
 		#endif
 	} else {
