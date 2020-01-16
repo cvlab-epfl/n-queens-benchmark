@@ -113,7 +113,7 @@ object Main {
 
 		println("n	mean	var")
 
-		for (num_queens <- 8 to 13) {
+		for (num_queens <- 8 to 16) {
 			val num_iter = if(num_queens <= 10) 1000
 				else if (num_queens <= 15) 10
 				else 5

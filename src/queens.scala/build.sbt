@@ -16,7 +16,9 @@ name := "queens.scala"
 organization := "ch.epfl.cvlab"
 version := "1.0"
 
-scalacOptions += "-deprecation"
+scalacOptions += "-target:jvm-1.10"
+javacOptions ++= Seq("-source", "1.10", "-target", "1.10")
+
 
 // Note, it's not required for you to define these three settings. These are
 // mostly only necessary if you intend to publish your library's binaries on a

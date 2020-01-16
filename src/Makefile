@@ -9,7 +9,7 @@
 ../bin/queens_cpp_heap: queens.cpp
 	clang++ -Ofast -std=c++17 -pthread -DALLOC_ON_HEAP queens.cpp -o ../bin/queens_cpp_heap
 
-c++: ../bin/queens_cpp_stack ../bin/queens_cpp_heap
+c++: ../bin/queens_cpp_stack ../bin/queens_cpp_heap ../bin/queens_cpp_stack_lambda
 	../bin/queens_cpp_stack_lambda --num_from 8 --num_to 16 -w 1 --output ../data/cplus_seq_stack_lambda.csv
 	../bin/queens_cpp_stack --num_from 8 --num_to 16 -w 12 --output ../data/cplus_para_stack.csv
 	../bin/queens_cpp_stack --num_from 8 --num_to 16 -w 1 --output ../data/cplus_seq_stack.csv
@@ -63,6 +63,18 @@ julia_para:
 
 # PATH="$PATH:/cvlabdata2/home/lis/programs/julia/bin" make julia
 julia: julia_seq julia_para
+
+
+../bin/queens.scala-assembly-1.0.jar: queens.scala/src/main/scala/Main.scala
+	cd queens.scala && sbt assembly && cp target/scala-2.13/queens.scala-assembly-1.0.jar ../bin
+
+scala: ../bin/queens.scala-assembly-1.0.jar
+	java -jar bin/queens.scala-assembly-1.0.jar recursive > data/scala_seq_recursive.csv
+	java -jar bin/queens.scala-assembly-1.0.jar closure > data/scala_seq_closure.csv
+
+
+
+
 
 plots:
 	python plots.py
