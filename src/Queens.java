@@ -1,4 +1,3 @@
-package chess;
 
 class Queens {
 	

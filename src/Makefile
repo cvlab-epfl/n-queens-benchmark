@@ -73,7 +73,8 @@ scala: ../bin/queens.scala-assembly-1.0.jar
 	java -jar bin/queens.scala-assembly-1.0.jar closure > data/scala_seq_closure.csv
 
 java: Queens.java
-	java Queens.java > ../data/java_seq_class.csv
+	javac Queens.java -d ../bin/ && cd ../bin && java Queens > ../data/java_seq_class.csv
+	
 
 
 plots:
